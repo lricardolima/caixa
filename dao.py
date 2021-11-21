@@ -67,7 +67,7 @@ class DaoCliente:
     @classmethod
     def salvar(cls, cliente: Pessoa):
         with open('cliente.txt', 'a') as arq:
-            arq.writelines(cliente.nome + "|" + cliente.idade + "|" + cliente.cpf + "|" + cliente.sexo)
+            arq.writelines(cliente.nome + "|" + cliente.telefone + "|" + cliente.cpf + "|" + cliente.email + "|" + cliente.endereco)
             arq.writelines("\n")
     @classmethod
     def ler(cls):
@@ -77,13 +77,13 @@ class DaoCliente:
             cls.cliente = list(map(lambda x: x.split("|"), cls.cliente))
         cli = []
         for i in cls.cliente:
-            cli.append(Pessoa(i[0], i[1], i[2], i[3]))
+            cli.append(Pessoa(i[0], i[1], i[2], i[3], i[4]))
         return cli
 class DaoFuncionario:
     @classmethod
     def salvar(cls, funcionario: Funcionario):
         with open('funcionario.txt', 'a') as arq:
-            arq.writelines(funcionario.clt + "|" + funcionario.nome + "|" + funcionario.idade + "|" + funcionario.cpf + "|" + funcionario.sexo)
+            arq.writelines(funcionario.clt + "|" + funcionario.nome + "|" + funcionario.telefone + "|" + funcionario.cpf + "|" + funcionario.email + "|" + funcionario.endereco)
             arq.writelines("\n")  
     @classmethod
     def ler(cls):
@@ -93,8 +93,9 @@ class DaoFuncionario:
             cls.funcionario = list(map(lambda x: x.split("|"), cls.funcionario))
         funci = []
         for i in cls.funcionario:
-            funci.append(Funcionario(i[0], i[1], i[2], i[3], i[4]))
+            funci.append(Funcionario(i[0], i[1], i[2], i[3], i[4], i[5]))
         return funci
+
 
 '''categorias = Categoria('Verduras')
 DaoCategoria.salvar(categorias)
@@ -104,5 +105,6 @@ x = Produto('Amoxilina', '2,65', 'Remedios', 'Pague Menos')
 y = Estoque(x, '500')
 DaoEstoque.salvar(x, y.quantidade)
 z = DaoEstoque.ler()
-print(z[0].quantidade)'''
-
+print(z[0].quantidade)
+x = Funcionario('003', 'ricardo', '85988647777', "00385423502", 'ricardo@gmial.com', 'rua d')
+DaoFuncionario.salvar(x)'''

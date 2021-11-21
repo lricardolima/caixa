@@ -1,0 +1,3 @@
+Ricardo|85988658888|00012301202|ricardo@gmail.com|rua D
+Souza|85988658888|10012301202|ricardo@gmail.com|rua D
+Souza|85988658888|10012301202|ricardo@gmail.com|rua D
