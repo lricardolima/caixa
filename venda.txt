@@ -1,5 +1,1 @@
-Amoxilina|5.99|Remedios|Pague Menos|Ricardo|Ruth|5|10/11/2021
-Amoxilina|7.99|Remedios|Pague Menos|Ricardo|Ruth|5|10/11/2021
-Amoxilina|2.00|Remedios|Pague Menos|Ricardo|Ruth|5|11/11/2021
-Amoxilina|1.00|Remedios|Pague Menos|Ricardo|Ruth|5|12/11/2021
-Amoxilina|0.55|Remedios|Pague Menos|Ricardo|Ruth|5|13/11/2021
+Dipirona|1.99|Remedios|Pague Menos|Ricardo|Ruth|35|21/11/2021

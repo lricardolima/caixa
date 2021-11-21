@@ -1,5 +1,1 @@
-Amoxilina|99|Pilulas|Pague Menos|1795
-Paracetamol|5.99|Pilulas|Pague Menos|1800
-Dipirona|2.99|Pilulas|Pague Menos|1800
-Xarope|1.99|Pilulas|Pague Menos|1800
-XUXU|5.30|Sem Categoria|Ceasa|200
+Dipirona|1.99|Remedios|Pague Menos|120

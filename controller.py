@@ -62,7 +62,7 @@ class ControllerCategoria:
         else:
             for categorias in categorialer:
                 print(f'Categoria: {categorias.categoria}')
-class ControllerEstroque:
+class ControllerEstoque:
     def cadastrarProduto(self, nome, preco, categoria, fornecedor, quantidade):
         estoqueLer = DaoEstoque.ler()
         categoriaLer = DaoCategoria.ler()
@@ -167,7 +167,6 @@ class ControllerVenda:
                 produtos = list(map(lambda x: {'produto': nome, 'quantidade': int(x['quantidade']) + int(quantidade)} if(x['produto'] == nome) else(x), produtos))
             else:
                 produtos.append({'produto': nome, 'quantidade': int(quantidade)})
-        print(produtos)
         ordenar = sorted(produtos, key=lambda k: k['quantidade'], reverse=True)
         print('Esses são os produtos mais vendidos')
         a = 1
@@ -358,5 +357,3 @@ class ControllerFuncionario:
             f"Telefone: {funcionario.telefone}\n"
             f"Cpf: {funcionario.cpf}\n"
             f"Clt: {funcionario.clt}")
-c = ControllerCategoria()
-c.alterarCategoria('Remedios', 'Pilulas')
